@@ -1,0 +1,18 @@
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Google OAuth Credentials (CRITICAL: Do not upload to GitHub)
+google-mcp-server/credentials.json
+google-mcp-server/token.json
+credential.json
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
