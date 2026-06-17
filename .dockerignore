@@ -1,0 +1,14 @@
+google-mcp-server/.venv/
+google-mcp-server/__pycache__/
+google-mcp-server/credentials.json
+google-mcp-server/token.json
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.vscode/
+.idea/
+.DS_Store
+docs/
