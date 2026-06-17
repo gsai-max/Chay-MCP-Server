@@ -12,6 +12,16 @@ app = FastAPI(
     version="1.0.0"
 )
 
+@app.get("/")
+def read_root():
+    return {
+        "status": "healthy",
+        "service": "Google Docs & Gmail MCP Server",
+        "version": "1.0.0",
+        "message": "Send POST requests to /append_to_doc or /create_email_draft endpoints."
+    }
+
+
 # Request Payloads
 class AppendDocPayload(BaseModel):
     doc_id: str

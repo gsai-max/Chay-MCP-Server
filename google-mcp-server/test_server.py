@@ -13,6 +13,12 @@ class TestServer(unittest.TestCase):
     def setUp(self):
         self.client = TestClient(app)
 
+    def test_read_root(self):
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["status"], "healthy")
+
+
     @patch('server.get_terminal_approval')
     @patch('server.get_credentials')
     @patch('server.append_to_doc')
